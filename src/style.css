@@ -741,3 +741,26 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.menu-slider {
+  display: flex;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  overflow: hidden;
+  margin: 0 20px;
+  transition: transform 0.5s ease-in-out; /* 여기에 트랜지션 추가 */
+}
+
+.menu-item {
+  flex: 0 0 auto; /* 슬라이드 항목의 너비를 유지하도록 설정 */
+  width: 100px; /* 실제 항목의 너비에 따라 조정해야 할 수 있습니다 */
+  margin-right: 20px;
+}
+
+.menu-item img {
+  width: 100%; /* 이미지를 div에 맞게 조정 */
+  height: auto;
+}

@@ -7,7 +7,7 @@ import Home from "./components/Home/Home";
 // import Menu from "./components/Menu/Menu";
 // import Location from "./components/Location/Location";
 // import Contact from "./components/Contact/Contact";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
   Route,
@@ -23,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+      <Footer />
       </div>
     </Router>
   );
@@ -31,7 +32,6 @@ function App() {
 export default App;
 /* 
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/location" element={<Location />} />
           <Route path="/contact" element={<Contact />} />
