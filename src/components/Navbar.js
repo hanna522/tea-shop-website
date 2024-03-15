@@ -2,14 +2,6 @@ import React, { useState } from "react";
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
-import {
-    AiFillStar,
-    AiOutlineHome,
-    AiOutlineFundProjectionScreen,
-    AiOutlineUser,
-  } from "react-icons/ai";
-  
-  import { CgFileDocument } from "react-icons/cg";
   
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
