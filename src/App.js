@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 // import Menu from "./components/Menu/Menu";
 // import Location from "./components/Location/Location";
-// import Contact from "./components/Contact/Contact";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
@@ -22,6 +22,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       <Footer />
       </div>
@@ -34,7 +35,6 @@ export default App;
         <Routes>
           <Route path="/menu" element={<Menu />} />
           <Route path="/location" element={<Location />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
       <Footer />

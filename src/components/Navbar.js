@@ -40,7 +40,21 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
 
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav" className="vertical-nav">
+          <Nav className="ms-auto language vertical-link" defaultActiveKey="#home">
+            <Nav.Link
+              as={Link}
+              to="/"
+              onClick={() => updateExpanded(false)}>
+                English
+            </Nav.Link>
+            <Nav.Link
+              as={Link}å
+              to="/"
+              onClick={() => updateExpanded(false)}>
+                Chinese
+            </Nav.Link>
+          </Nav>
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>Home
@@ -70,8 +84,7 @@ function NavBar() {
                 as={Link}
                 to="/contact"
                 onClick={() => updateExpanded(false)}
-              >contact
-              
+              >Contact
               </Nav.Link>
             </Nav.Item>
           </Nav>
