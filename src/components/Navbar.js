@@ -88,6 +88,24 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
           </Nav>
+          <Nav className="ms-auto language collapse-link" id="co" defaultActiveKey="#home">
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={() => updateExpanded(false)}>
+                  English
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}å
+                to="/"
+                onClick={() => updateExpanded(false)}>
+                  Chinese
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

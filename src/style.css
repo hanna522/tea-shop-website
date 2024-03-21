@@ -140,6 +140,21 @@ button:focus {
   opacity: 0.9 !important;
 }
 
+.language {
+  font-size: 12px;
+}
+
+.vertical-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.collapse-link {
+  display: none !important;
+}
+
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
@@ -150,14 +165,22 @@ button:focus {
     display: none !important;
   }
 
+  .vertical-link {
+    display: none !important;
+  }
+
+  .collapse-link {
+    display: flex !important;
+    flex-direction: row !important;
+  }
 }
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  max-height: 6em !important;
+
 }
 
 .navbar-nav .nav-link {
@@ -278,6 +301,7 @@ button:focus {
   position: relative;
   z-index: -1;
   background-image: var(--image-gradient), url('./Assets/home-bg.jpg');
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -288,6 +312,19 @@ button:focus {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+}
+
+.home-right-content {
+  padding: 9rem 0 2rem !important;
+  color: whitesmoke;
+  text-align: right;
+}
+
+.home-middle-content {
+  padding-top: 100px !important;
+  padding-bottom: 20px !important;
+  color: white !important;
+  text-align: center;
 }
 
 .heading {
@@ -339,36 +376,28 @@ button:focus {
 */
 .home-info-section {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background-image: var(--image-gradient), url('./Assets/home-bg.jpg');
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
 
-.home-right-content {
-  padding: 9rem 0 2rem !important;
-  color: whitesmoke;
-  text-align: right;
-}
+
 
 .home-about-section {
   position: relative;
   z-index: -1;
   background-image: var(--image-gradient), url('./Assets/home-bg.jpg');
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
 
-.home-middle-content {
-  color: white !important;
-  padding-top: 100px !important;
-  padding-bottom: 20px !important;
-  text-align: center;
-}
 
 .info-list {
   display: flex;
@@ -413,9 +442,17 @@ button:focus {
   padding: 0px 10px;
 }
 
+.slider {
+  margin-bottom: 50px;
+}
+
 .slick-dots li button:before {
   font-size: 12px !important;
   bottom: -25px;
+}
+
+.btn {
+  z-index: 1 !important;
 }
 
 .home-about-social {
@@ -515,7 +552,7 @@ button:focus {
   margin-bottom: 0.5em !important;
 }
 .footer-icons {
-  margin-top: 0.5em !important;
+  margin-top: 1em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
 }
@@ -823,15 +860,3 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
-
-.vertical-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 100%;
-}
-
-.language {
-  font-size: 12px;
-}
-
