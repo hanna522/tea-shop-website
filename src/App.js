@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 // import Menu from "./components/Menu/Menu";
-// import Location from "./components/Location/Location";
+import Location from "./components/Location/Location";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 import {
@@ -23,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/location" element={<Location />} />
         </Routes>
       <Footer />
       </div>
