@@ -37,7 +37,7 @@ export default function Location() {
     <>
       <Container fluid className="location-info-section">
         <Container className="location-info-content">
-          <Row>
+          <Row className="home-header">
             <h1>Location</h1>
             <Col md={7}>
               <Wrapper apiKey={API_KEY}>

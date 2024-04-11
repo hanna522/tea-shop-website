@@ -387,6 +387,18 @@ button:focus {
 }
 
 /* --------- */
+/* Menu section */
+/* --------- */
+
+.menu-info-section {
+  position: relative;
+  color: var(--fg-color-b);
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+  margin-top: 120px;
+}
+
+/* --------- */
 /* Location section */
 /* --------- */
 .location-info-section {
@@ -395,6 +407,12 @@ button:focus {
   padding-bottom: 30px !important;
   padding-top: 30px !important;
   margin-top: 120px;
+}
+
+@media (max-width: 767px) {
+  .location-info-section {
+    margin-top: 150px;
+  }
 }
 
 .location-info-content {
@@ -407,11 +425,7 @@ button:focus {
   padding-bottom: 30px;
 }
 
-.location-info-content h2 {
-  padding-bottom: 10px;
-}
-
-.location-info-content h4 {
+.location-info-content section {
   padding: 10px 0px 3px 0px;
 }
 

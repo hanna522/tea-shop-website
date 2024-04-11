@@ -9,8 +9,8 @@ import MenuList from "./MenuList.js";
 function Menu() {
   return (
     <section>
-      <Container fluid className="home-welcome-section" id="home">
-        <Container className="home-left-content">
+      <Container fluid className="menu-info-section" id="home">
+        <Container className="menu-info-content">
             {
                 MenuList.map((menuItem)=>{
                     return (
