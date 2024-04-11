@@ -45,15 +45,12 @@ function FeaturedMenuSlider() {
         <Container fluid className="home-info-section" id="home">
           <Container className="middle-content">
             <Row>
-              <Col md={12} className="header">
-                  <h1 className="heading">
+              <Col className="header">
+                  <h2 className="heading">
                       This is our <span className="purple"> Featured Menu </span>
-                  </h1>
-                  <h2 className="heading-name">
-                      This is h2 for featured menu
                   </h2>
               </Col>
-              <Col md={12} className="header">
+              <Col className="header">
                   <Slider className="slider" {...settings}>
                       {menus.map((menu, index) => (
                       <div key={index} className="menu-item">
