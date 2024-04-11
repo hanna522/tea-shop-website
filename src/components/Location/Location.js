@@ -29,7 +29,7 @@ const MyMapComponent = ({ center, zoom }) => {
 };
 
 export default function Location() {
-  const API_KEY = "AIzaSyDUZqQmTvngC0RzytNANCvw5a_HZWTvIbk";
+  const API_KEY = "";
   const center = { lat: 37.335594177246094, lng: -121.88988494873047 };
   const zoom = 14;
 
