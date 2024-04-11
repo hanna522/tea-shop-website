@@ -32,7 +32,7 @@ function Footer() {
           <ul className="footer-social">
             <li>
               <a
-                href="http://google.com"
+                href="https://www.instagram.com/teaalley/?hl=en"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -42,7 +42,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="http://google.com"
+                href="https://www.facebook.com/TeaAlleySJ/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
