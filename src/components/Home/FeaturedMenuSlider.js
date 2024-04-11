@@ -42,25 +42,27 @@ function FeaturedMenuSlider() {
 
   return (
       <>
-        <Container fluid className="home-info-section" id="home">
-          <Container className="middle-content">
-            <Row>
-              <Col className="header">
-                  <h2 className="heading">
-                      This is our <span className="purple"> Featured Menu </span>
-                  </h2>
+        <Container fluid className="home-info-section">
+          <Container className="home-info-content">
+            <Row className="home-header">
+              <Col>
+                  <h1>Our Featured Menu</h1>
               </Col>
-              <Col className="header">
+            </Row>
+            <Row className="home-header">
+              <Col>
                   <Slider className="slider" {...settings}>
                       {menus.map((menu, index) => (
-                      <div key={index} className="menu-item">
+                      <div key={index} className="slider-item">
                           <img src={menu.image} alt={menu.name} />
                           <p>{menu.name}</p>
                       </div>
                       ))}
                   </Slider>
               </Col>
-              <Col md={12} className="header">
+            </Row>
+            <Row className="home-header">
+              <Col>
                   <Link to="/menu" className="btn btn-primary">Browse our Menu</Link>
               </Col>
             </Row>

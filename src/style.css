@@ -360,91 +360,30 @@ button:focus {
   border-radius: 50%;
 }
 
-.menu-item {
+/* featured menu section */
+.slider {
+  margin-bottom: 30px;
+}
+
+.slider-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.menu-item img { /* needs to be adjusted to original size later */
-  height: 300px;
-  width: 230px;
+.slider-item img { 
+  height: 300px; /* needs to be adjusted to original size later */
+  width: 230px; /* needs to be adjusted to original size later */
   padding: 0px 10px;
+  margin-bottom: 10px;
 }
 
-.slider {
-  margin-bottom: 50px;
+.slider-item p {
+  font-weight: 500;
 }
 
 .slick-dots li button:before {
-  font-size: 12px !important;
-  bottom: -25px;
-}
-
-.btn {
-  z-index: 1 !important;
-}
-
-.home-about-social {
-  text-align: center !important;
-  padding-top: 25px;
-  color: white !important;
-}
-
-.home-about-social-links {
-  justify-content: center !important;
-  padding-top: 15px !important;
-  display: inline-block !important;
-  position: relative !important;
-  padding-inline-start: 0 !important;
-}
-
-.home-social-icons {
-  position: relative !important;
-  display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
-  text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
-  border-radius: 50% !important;
-  transition: 0.5s !important;
-}
-
-.home-social-icons::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #75ffdf;
-  transition: 0.5s;
-  transform: scale(0.9);
-  z-index: -1;
-}
-
-.home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #75ffdf;
-}
-
-.home-social-icons:hover {
-  color: #75ffdf;
-  box-shadow: 0 0 5px #75ffdf;
-  text-shadow: 0 0 2px #75ffdf;
-}
-
-.social-icons {
-  display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.icon-colour {
-  color: #700c86 !important;
+  font-size: 15px !important;
 }
 
 /* --------- */
@@ -452,40 +391,42 @@ button:focus {
 /* --------- */
 .footer {
   background-color: var(--fg-color-b);
-  bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
-}
-.footer-copywright {
-  text-align: center !important;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 8px;
 }
 
-.footer-body {
-  z-index: 1;
-  text-align: center !important;
-}
-
-@media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
-
-  .footer-body {
-    text-align: center !important;
-  }
+.footer h2 {
+  font-size: 0.8em;
+  font-weight: 900;
+  color: var(--font-color-b);
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
 }
 
 .footer h3 {
-  font-size: 1em;
-  color: white !important;
+  font-size: 0.8em;
+  color: var(--font-color-b) !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
 .footer-icons {
   margin-top: 1em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
 }
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 15px;
+}
+
+
+
+
 
 /* needs to be deleted later */
 

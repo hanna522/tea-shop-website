@@ -11,24 +11,26 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Contact</h3>
-          <h3>Tel : 123-4567-8919</h3>
-          <h3>Tel : 123-4567-8919</h3>
+        <Col md={4} className="footer-content">
+          <h2>Contact</h2>
+          <h3>(408) 217-9486</h3>
         </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Location</h3>
-          <h3>1222 harrison st, San Jose</h3>
-          <h3>CA, 94103</h3>
+        <Col md={4} className="footer-content">
+          <h2>Location</h2>
+          <h3>40 S 1st St</h3>
+          <h3>San Jose, CA 95113</h3>
+          <h3>Downtown</h3>
         </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Location</h3>
-          <h3>1222 harrison st, San Jose</h3>
-          <h3>CA, 94103</h3>
+        <Col md={4} className="footer-content">
+          <h2>Open Hours</h2>
+          <h3>Tue-Sat : 8:00 PM - 2:00 AM</h3>
+          <h3>Mon, Sun : 8:30 PM - 2:00 AM</h3>
         </Col>
-        <Col md="12" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
+      </Row>
+      <Row>
+        <Col>
+          <ul className="footer-social">
+            <li>
               <a
                 href="http://google.com"
                 style={{ color: "white" }}
