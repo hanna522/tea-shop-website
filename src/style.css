@@ -4,7 +4,7 @@
   --bg-color:#FFFEF5;
   --fg-color-b:#242927;
   --fg-color-l:#323734;
-  --main-color-b:#B5FED9;
+  --main-color-b:#c7ffe3;
   --main-color-l:#8CE4B5;
   --main-color-d:#2e4d3f;
   --highlight-color-b:#D7263D;
@@ -271,26 +271,46 @@ button:focus {
 
 .home-welcome-section {
   position: relative;
-  background-image: var(--image-gradient), url('./Assets/home-bg.jpg');
+  background-image: var(--image-gradient), url('./Assets/main-bg.jpg');
   background-position: top center;
-  background-size: 1000px;
+  background-size: 900px;
   background-repeat: no-repeat;
   margin-top: 120px;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
   height: 500px;
+  overflow: hidden;
 }
 
 .home-welcome-content {
-  display: flex;
-  justify-content: center;
-  margin-top: 400px;
+  margin-top: 50px;
+}
 
+.home-welcome-content {
+  width: 300px;
+}
+.home-welcome-title {
+  text-align: left;
+  margin-left: 80px;
+}
+
+.home-welcome-title h1 {
+  font-size: 80px;
+  margin-bottom: -10px;
+  font-weight: 800;
+}
+
+.home-welcome-title p {
+  font-size: 25px;
+  margin-left: 15px;
+  font-weight: 700;
 }
 
 .home-welcome-link {
   display: flex;
-  gap: 0.8em;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 150px !important;
 }
 
 /* Home info section */
@@ -316,7 +336,7 @@ button:focus {
   justify-items: center;
   list-style: none;
   gap: 0px;
-  padding: 30px 20px 0px 20px;
+  padding: 30px 0px 0px 0px;
 }
 
 @media (max-width: 767px) {
@@ -331,12 +351,26 @@ button:focus {
   display: flex;
   align-items: center;
   padding: 15px;
+  width: 400px;
+}
+
+
+@media (max-width: 898px) {
+  .home-info-grid-list li {
+    width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-info-grid-list li {
+    width: 400px;
+  }
 }
 
 .home-info-grid-list img {
   height: 100px; /* needs to be changed*/
   width: 100px; /* needs to be changed*/
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 .home-info-flex-list {
@@ -352,12 +386,19 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 400px;
 }
 
 .home-info-flex-list img {
   height: 130px;
   width: 130px;
   border-radius: 50%;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.teas-icon {
+  filter: invert(70%) sepia(7%) saturate(535%) hue-rotate(120deg) brightness(110%) contrast(100%);
 }
 
 /* featured menu section */

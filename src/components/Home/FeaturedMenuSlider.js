@@ -21,6 +21,15 @@ const settings = {
         }
       },
       {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
