@@ -20,7 +20,7 @@ function GoogleReview() {
 
   return (
     <Container fluid className="home-info-section" id="home">
-      <Container className="home-middle-content">
+      <Container className="middle-content">
         <Row>
           <Col md={12} className="header">
             <h1 className="heading">

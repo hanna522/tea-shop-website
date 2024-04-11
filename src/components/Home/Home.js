@@ -1,96 +1,85 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.png";
-import "slick-carousel/slick/slick.css"; 
+import { Link } from "react-router-dom";
+import homeMainImage from "../../Assets/home-main.png"; // More descriptive
+import productImage from "../../Assets/home-product.png"; // More descriptive
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import MenuSlider from "./MenuSlider.js";
-import GoogleReview from "./GoogleReview.js";
-
+import FeaturedMenuSlider from "./FeaturedMenuSlider"; // Specifies the type of menu being slid
+import GoogleReview from "./GoogleReview"; // More descriptive
+import HeaderSection from "../HeaderSection";
+import ContentSection from "../ContentSection";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-welcome-section" id="home">
-        <Container className="home-left-content">
-          <Row>
-            <Col md={8} className="home-header">
-              <h1 calssName="heading">
-                Welcome to <span className="purple">TEA Alley</span>
-              </h1>
-              <h2 className="heading-name">
-                This is for the welcome message h2
-              </h2>
-              <p className="heading-content">
-                This is for the welcome message content. This is for the welcome message content. This is for the welcome message content. This is for the welcome message content. This is for the welcome message content. This is for the welcome message content. 
-              </p>
-            </Col>
-            <Col md={4} className="home-header" style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
+    <>
+    <HeaderSection
+      title="Find Your Drink in TEA Alley" 
+      subtitle="Explore our wide range of sweet and refreshing flavors to find your little piece of happiness."
+    >
+      <div className="home-welcome-link">
+        <Link to="/Home" className="btn btn-primary" label="About Us">About Us</Link>
+        <Link to="/Menu" className="btn btn-primary" label="Browse Menu">Browse Menu</Link>
+      </div>
+    </HeaderSection>
 
-      <Container fluid className="home-info-section" id="home">
-        <Container className="home-middle-content">
-          <Row>
-            <Col md={12} className="home-header">
-              <h1 className="heading">
-               The Art of Tea <span className="purple">BLENDING</span>
-              </h1>
-              <h2 className="heading-name">
-                This is the blending information h2
-              </h2>
-              <p className="heading-content">
-                This is for the blending information content. This is for the blending information content. This is for the blending information content. This is for the blending information content. This is for the blending information content. This is for the blending information content.
-              </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12} className="home-list">
-              <ul class="info-list">
-              <li class="info-list-content">
-                <div class="Img">
-                  <a  title="Various Teas"><img src={homeLogo} alt="Various Teas"/></a>
-                </div>
-                <div class="Txt">
-                  <h3><a  title="Various Teas"><b>V</b>arious Teas</a></h3>
-                  <p>With a deep understanding of the characteristics</p>
-                </div>
-              </li>
-              <li class="info-list-content">
-                <div class="Img">
-                  <a  title="Various Teas"><img src={homeLogo} alt="Various Teas"/></a>
-                </div>
-                <div class="Txt">
-                  <h3><a  title="Various Teas"><b>V</b>arious Teas</a></h3>
-                  <p>With a deep understanding of the characteristics</p>
-                </div>
-              </li>
-              <li class="info-list-content">
-                <div class="Img">
-                  <a  title="Various Teas"><img src={homeLogo} alt="Various Teas"/></a>
-                </div>
-                <div class="Txt">
-                  <h3><a  title="Various Teas"><b>V</b>arious Teas</a></h3>
-                  <p>With a deep understanding of the characteristics</p>
-                </div>
-              </li>
-            </ul>           
-            </Col>
-          </Row>
-        </Container>
-      </Container>
+    <ContentSection
+      title="Taiwanese tea-based drink"
+      subtitle="Characterized by milk tea with its signature tapioca pearls or jellies, this beverage offers a unique blend of flavors and textures."
+    >
+      <Col md={4} className="home-header" style={{ paddingBottom: 20 }}>
+        <img
+          src={productImage}
+          alt="home pic"
+          className="img-fluid"
+          style={{ maxHeight: "250px" }}
+        />
+      </Col>
+    </ContentSection>
 
-      <MenuSlider />  
-      <GoogleReview />
-      
-    </section>
+    <ContentSection
+      title="The Art of Tea BLENDING"
+      subtitle="Enjoy the drink with various kind of tea base"
+    >
+      <Row>
+        <Col md={12} className="home-list">
+          <ul class="info-list">
+          <li class="info-list-content">
+            <div class="Img">
+              <a  title="Various Teas"><img src={homeMainImage} alt="Various Teas"/></a>
+            </div>
+            <div class="Txt">
+              <h3><a  title="Various Teas"><b>V</b>arious Teas</a></h3>
+              <p>With a deep understanding of the characteristics</p>
+            </div>
+          </li>
+          <li class="info-list-content">
+            <div class="Img">
+              <a  title="Various Teas"><img src={homeMainImage} alt="Various Teas"/></a>
+            </div>
+            <div class="Txt">
+              <h3><a  title="Various Teas"><b>V</b>arious Teas</a></h3>
+              <p>With a deep understanding of the characteristics</p>
+            </div>
+          </li>
+          <li class="info-list-content">
+            <div class="Img">
+              <a  title="Various Teas"><img src={homeMainImage} alt="Various Teas"/></a>
+            </div>
+            <div class="Txt">
+              <h3><a  title="Various Teas"><b>V</b>arious Teas</a></h3>
+              <p>With a deep understanding of the characteristics</p>
+            </div>
+          </li>
+        </ul>           
+        </Col>
+      </Row>
+
+    </ContentSection>
+
+    <FeaturedMenuSlider />  
+    <GoogleReview />
+    </>
   );
 }
 

@@ -1,4 +1,16 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --bg-color:#FFFEF5;
+  --fg-color-b:#242927;
+  --fg-color-l:#323734;
+  --main-color-b:#B5FED9;
+  --main-color-l:#8CE4B5;
+  --main-color-d:#2e4d3f;
+  --highlight-color-b:#D7263D;
+  --highlight-color-l:#EB746A;
+  --font-color-b: whitesmoke;
+
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
@@ -7,15 +19,19 @@ html {
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(31, 36, 35, 0.582),
+    rgba(8, 24, 21, 0.904)
   );
-
-  --imp-text-color: #75ffdf;
 }
 
-.purple {
-  color: var(--imp-text-color) !important;
+html {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--fg-color-b);
+}
+
+.green {
+  color: var(--main-color-b) !important;
 }
 
 button:focus {
@@ -23,6 +39,7 @@ button:focus {
 }
 
 /* --------- */
+/* needs to be added to html */
 /*  Preloader */
 /* --------- */
 #preloader {
@@ -57,18 +74,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: var(--main-color-d);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: var(--main-color-b);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: var(--main-color-l);
   border-radius: 12px;
 }
 
@@ -76,9 +93,9 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: var(--fg-color-b) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(5, 29, 18, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -97,7 +114,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #75ffdf !important;
+  background-color: var(--main-color-b) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -174,9 +191,6 @@ button:focus {
     flex-direction: row !important;
   }
 }
-.navbar-brand {
-  color: rgb(250, 250, 250) !important;
-}
 
 .logo {
   max-height: 6em !important;
@@ -184,7 +198,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: var(--bg-color) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -233,50 +247,6 @@ button:focus {
 /* Home section */
 /* --------- */
 
-/* delete
-.wave {
-  animation-name: wave-animation;
-  animation-duration: 2.1s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-#tsparticles {
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-}
-*/
-
 .home-header {
   padding-top: 80px !important;
   animation: 0.6s ease-in-out loadEffect2;
@@ -299,7 +269,6 @@ button:focus {
 
 .home-welcome-section {
   position: relative;
-  z-index: -1;
   background-image: var(--image-gradient), url('./Assets/home-bg.jpg');
   background-size: cover;
   background-position: top center;
@@ -308,22 +277,44 @@ button:focus {
   padding-top: 30px !important;
 }
 
-.home-left-content {
+.home-info-section {
+  position: relative;
+  color: var(--fg-color-b);
+  background-color: var(--bg-color);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+.home-about-section {
+  position: relative;
+  z-index: -1;
+  background-color: var(--bg-color) !important;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+.left-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: var(--fg-color-b);
   text-align: left;
 }
 
-.home-right-content {
+.right-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: var(--font-color-b);
   text-align: right;
 }
 
-.home-middle-content {
+.middle-content {
   padding-top: 100px !important;
   padding-bottom: 20px !important;
-  color: white !important;
+  color: var(--fg-color-b);
   text-align: center;
 }
 
@@ -340,64 +331,10 @@ button:focus {
   font-size: 1em !important;
 }
 
-/* delete
-.Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #75ffdf !important;
-  font-weight: 600 !important;
+.home-welcome-link {
+  display: flex;
+  gap: 0.8em;
 }
-.Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #75ffdf !important;
-}
-
-@media (max-width: 767px) {
-  .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
-  }
-  .Typewriter__cursor {
-    display: none !important;
-  }
-}
-
-.myAvtar {
-  justify-content: center !important;
-  padding-top: 9em !important;
-}
-
-@media (max-width: 767px) {
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
-}
-*/
-.home-info-section {
-  position: relative;
-  z-index: 1;
-  background-image: var(--image-gradient), url('./Assets/home-bg.jpg');
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
-}
-
-
-
-.home-about-section {
-  position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url('./Assets/home-bg.jpg');
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
-}
-
 
 .info-list {
   display: flex;
@@ -428,7 +365,6 @@ button:focus {
   width: 130px;
   border-radius: 50%
 }
-
 
 .menu-item {
   display: flex;
@@ -521,7 +457,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: var(--fg-color-b);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -557,9 +493,8 @@ button:focus {
   padding: 0 !important;
 }
 
-.blockquote-footer {
-  color: #a588c0 !important;
-}
+/* needs to be deleted later */
+
 /* --------- */
 /* Projects */
 /* --------- */
@@ -637,8 +572,8 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #00ffc3 !important;
-  border-color: #00ffc3 !important;
+  background-color: #d80000 !important;
+  border-color: #d80000 !important;
 }
 
 .btn-primary:hover {
@@ -807,7 +742,7 @@ button:focus {
 .like-item {
   padding-top: 10px !important;
   font-size: 1.1em !important;
-  font-family: sans-serif !important;
+  font-family: Lato !important;
 }
 
 .like-btn {
