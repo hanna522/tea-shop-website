@@ -1,13 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillWechat,
-} from "react-icons/ai";
+import { AiFillFacebook, AiFillInstagram, AiFillWechat } from "react-icons/ai";
 
 function Footer() {
-
   return (
     <Container fluid className="footer">
       <Row>
@@ -34,7 +29,7 @@ function Footer() {
               <a
                 href="https://www.instagram.com/teaalley/?hl=en"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
@@ -44,7 +39,7 @@ function Footer() {
               <a
                 href="https://www.facebook.com/TeaAlleySJ/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillFacebook />
@@ -54,7 +49,7 @@ function Footer() {
               <a
                 href="http://google.com"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillWechat />

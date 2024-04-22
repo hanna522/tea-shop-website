@@ -1,24 +1,23 @@
 import React, { useState } from "react";
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
-  
-function NavBar() {
-  const [expand, updateExpanded] = useState(false);
+import { useLanguage } from "./LanguageContext";
 
+function NavBar() {
+  const { setLanguage } = useLanguage();
+  const [expand, updateExpanded] = useState(false);
+  const handleSelectLanguage = (lang) => {
+    setLanguage(lang);
+  };
 
   return (
-    <Navbar
-      expanded={expand}
-      fixed="top"
-      expand="md"
-      className="sticky"
-    >
+    <Navbar expanded={expand} fixed="top" expand="md" className="sticky">
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
-        
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -31,68 +30,93 @@ function NavBar() {
         </Navbar.Toggle>
 
         <Navbar.Collapse id="responsive-navbar-nav" className="vertical-nav">
-          <Nav className="ms-auto language vertical-link" defaultActiveKey="#home">
+          <Nav
+            className="ms-auto language vertical-link"
+            defaultActiveKey="#home"
+          >
             <Nav.Link
               as={Link}
               to="/"
-              onClick={() => updateExpanded(false)}>
-                English
+              onClick={() => {
+                updateExpanded(false);
+                handleSelectLanguage("en");
+              }}
+            >
+              English
             </Nav.Link>
             <Nav.Link
-              as={Link}å
+              as={Link}
               to="/"
-              onClick={() => updateExpanded(false)}>
-                Chinese
+              onClick={() => {
+                updateExpanded(false);
+                handleSelectLanguage("zh");
+              }}
+            >
+              中文
             </Nav.Link>
           </Nav>
+
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>Home
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                Home
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/menu"
                 onClick={() => updateExpanded(false)}
-              >Menu
+              >
+                Menu
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/location"
                 onClick={() => updateExpanded(false)}
-              >Location
+              >
+                Location
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/contact"
                 onClick={() => updateExpanded(false)}
-              >Contact
+              >
+                Contact
               </Nav.Link>
             </Nav.Item>
           </Nav>
-          <Nav className="ms-auto language collapse-link" id="co" defaultActiveKey="#home">
+
+          <Nav
+            className="ms-auto language collapse-link"
+            defaultActiveKey="#home"
+          >
             <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/"
-                onClick={() => updateExpanded(false)}>
-                  English
+                onClick={() => {
+                  updateExpanded(false);
+                  handleSelectLanguage("en");
+                }}
+              >
+                English
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                as={Link}å
+                as={Link}
                 to="/"
-                onClick={() => updateExpanded(false)}>
-                  Chinese
+                onClick={() => {
+                  updateExpanded(false);
+                  handleSelectLanguage("zh");
+                }}
+              >
+                中文
               </Nav.Link>
             </Nav.Item>
           </Nav>

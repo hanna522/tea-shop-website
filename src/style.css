@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
-  --bg-color:#FFFEF5;
-  --fg-color-b:#242927;
-  --fg-color-l:#323734;
-  --main-color-b:#c7ffe3;
-  --main-color-l:#8CE4B5;
-  --main-color-d:#2e4d3f;
-  --highlight-color-b:#D7263D;
-  --highlight-color-l:#EB746A;
+  --bg-color: #fffef5;
+  --fg-color-b: #242927;
+  --fg-color-l: #323734;
+  --main-color-b: #c7ffe3;
+  --main-color-l: #8ce4b5;
+  --main-color-d: #2e4d3f;
+  --highlight-color-b: #d7263d;
+  --highlight-color-l: #eb746a;
   --font-color-b: whitesmoke;
 
   --section-background-color: linear-gradient(
@@ -40,7 +40,7 @@ button:focus {
 
 /* --------- */
 /* needs to be added to html */
-/*  Preloader */
+/* Preloader */
 /* --------- */
 #preloader {
   position: fixed;
@@ -65,7 +65,7 @@ button:focus {
 }
 
 /* --------- */
-/*Scrollbar   */
+/* Scrollbar */
 /* --------- */
 
 ::-webkit-scrollbar {
@@ -93,72 +93,70 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: var(--fg-color-b) !important;
-  transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(5, 29, 18, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  background-color: var(--fg-color-b);
+  box-shadow: 0px 10px 10px 0px rgba(5, 29, 18, 0.171);
 }
 
 .navbar {
-  position: fixed !important;
-  transition: all 0.3s ease-out 0s !important;
+  position: fixed;
   padding: 0.3rem 2rem !important;
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
 }
 
 .navbar-toggler {
-  position: relative !important;
-  background-color: transparent !important;
-  border-color: transparent !important;
+  position: relative;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .navbar-toggler span {
-  display: block !important;
-  background-color: var(--main-color-b) !important;
-  height: 4px !important;
-  width: 27px !important;
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
-  transform: rotate(0deg) !important;
-  left: 0 !important;
-  opacity: 1 !important;
+  display: block;
+  background-color: var(--main-color-b);
+  height: 4px;
+  width: 27px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transform: rotate(0deg);
+  left: 0;
+  opacity: 1;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
-  outline: 0 !important;
+  outline: 0;
 }
 
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out !important;
-  transition: transform 0.35s ease-in-out !important;
+  transition: transform 0.35s ease-in-out;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
-  position: absolute !important;
-  left: 12px !important;
-  top: 10px !important;
-  transform: rotate(135deg) !important;
-  opacity: 0.9 !important;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(135deg);
+  opacity: 0.9;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
-  height: 12px !important;
-  visibility: hidden !important;
-  background-color: transparent !important;
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
-  position: absolute !important;
-  left: 12px !important;
-  top: 10px !important;
-  transform: rotate(-135deg) !important;
-  opacity: 0.9 !important;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(-135deg);
+  opacity: 0.9;
 }
 
 .language {
   font-size: 12px;
+  margin: 0px;
+  padding-top: 0px !important;
 }
 
 .vertical-nav {
@@ -172,7 +170,7 @@ button:focus {
   display: none !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
@@ -194,7 +192,6 @@ button:focus {
 
 .logo {
   max-height: 6em !important;
-
 }
 
 .navbar-nav .nav-link {
@@ -207,7 +204,7 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
@@ -246,24 +243,23 @@ button:focus {
 /* --------- */
 /* Home section */
 /* --------- */
-
 .home-header {
   animation: 0.6s ease-in-out loadEffect2;
   padding-bottom: 20px;
 }
 
 @keyframes loadEffect2 {
-  0%{
-      opacity: 0;
-      transform: translateX(-30px);
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
   }
-  50%{
-      opacity: 0.5;
-      transform: translateX(30px);
+  50% {
+    opacity: 0.5;
+    transform: translateX(30px);
   }
-  100%{
-      opacity: 1;
-      transform: translateX(0px);
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
@@ -271,7 +267,7 @@ button:focus {
 
 .home-welcome-section {
   position: relative;
-  background-image: var(--image-gradient), url('./Assets/main-bg.jpg');
+  background-image: var(--image-gradient), url("./Assets/main-bg.jpg");
   background-position: top center;
   background-size: 900px;
   background-repeat: no-repeat;
@@ -289,9 +285,10 @@ button:focus {
 .home-welcome-content {
   width: 300px;
 }
+
 .home-welcome-title {
+  margin-left: 20%;
   text-align: left;
-  margin-left: 80px;
 }
 
 .home-welcome-title h1 {
@@ -313,13 +310,20 @@ button:focus {
   margin-top: 150px !important;
 }
 
+@media (max-width: 1024px) {
+  .home-welcome-title {
+    margin-left: 10%;
+  }
+}
+
 /* Home info section */
 
 .home-info-section {
   position: relative;
   color: var(--fg-color-b);
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  overflow: hidden;
 }
 
 .home-info-content {
@@ -339,7 +343,7 @@ button:focus {
   padding: 30px 0px 0px 0px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .home-info-grid-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -354,14 +358,13 @@ button:focus {
   width: 400px;
 }
 
-
-@media (max-width: 898px) {
+@media (max-width: 1024) {
   .home-info-grid-list li {
     width: 350px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .home-info-grid-list li {
     width: 400px;
   }
@@ -398,7 +401,8 @@ button:focus {
 }
 
 .teas-icon {
-  filter: invert(70%) sepia(7%) saturate(535%) hue-rotate(120deg) brightness(110%) contrast(100%);
+  filter: invert(70%) sepia(7%) saturate(535%) hue-rotate(120deg)
+    brightness(110%) contrast(100%);
 }
 
 /* featured menu section */
@@ -412,7 +416,7 @@ button:focus {
   align-items: center;
 }
 
-.slider-item img { 
+.slider-item img {
   height: 300px; /* needs to be adjusted to original size later */
   width: 230px; /* needs to be adjusted to original size later */
   padding: 0px 10px;
@@ -450,7 +454,7 @@ button:focus {
   margin-top: 120px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .location-info-section {
     margin-top: 150px;
   }
@@ -526,10 +530,6 @@ button:focus {
   gap: 50px;
   margin-top: 15px;
 }
-
-
-
-
 
 /* needs to be deleted later */
 
@@ -633,7 +633,6 @@ button:focus {
 /* --------- */
 /* About */
 /* --------- */
-
 .about-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -657,7 +656,7 @@ button:focus {
   transition: all 0.4s ease 0s !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .tech-icons {
     margin: 10px !important;
   }
@@ -685,15 +684,15 @@ button:focus {
   padding-left: 1px !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .about-img {
     padding-top: 0 !important;
   }
 }
+
 /* --------- */
 /* Resume */
 /* --------- */
-
 .resume-section {
   position: relative !important;
   padding-top: 110px !important;
@@ -716,7 +715,7 @@ button:focus {
   padding-left: 80px !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .resume-left {
     padding-right: 15px !important;
     padding-left: 15px !important;
