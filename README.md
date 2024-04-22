@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Tea Shop Website
+This repository contains the frontend code for the tea shop website project. It is built entirely in ReactJS and deployed using Netlify.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+Tea Shop Website is a web application developed to provide a website for a Tea Shop in San Jose. Utilizing ReactJS for the frontend, this project offers a user-friendly interface getting information about bubble tea for browsing menu to new customers.
 
-## Available Scripts
+## Preview
+The web interface is accessible online at [Tea Alley](http://localhost:3000)
+![image](https://github.com/hanna522/tea-shop-website/assets/120094054/ef3e3bf5-fd88-47f6-b708-e4c9a4822519)
 
-In the project directory, you can run:
+## Project Structure
+The frontend codebase is organized as follows:
 
-### `npm start`
+    plant-disease-classifier-frontend/
+    │
+    ├── public/              # Public assets and index.html
+    │
+    ├── src/                 # Source code directory
+    │   ├── components/      # React components
+    │   ├── styles/          # CSS stylesheets
+    │   ├── App.js           # Main application component
+    │   └── index.js         # Entry point
+    │
+    ├── .gitignore           # Specifies intentionally untracked files to ignore
+    ├── LICENSE              # MIT License file
+    └── README.md            # Project README file
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Dependencies
+The Tea Shop Website relies on the following major dependencies:
+- React: A JavaScript library for building user interfaces.
+- Axios: A promise-based HTTP client for making API requests.
+- React Router: Declarative routing for React applications.
+- Netlify: Hosting platform for deploying web applications.
 
-### `npm test`
+## Contributions
+We welcome contributions from the community to improve this project. Whether you have ideas for enhancing the frontend interface, adding new features, or fixing bugs, your contributions are valuable. Feel free to open an issue or submit a pull request—we appreciate your input!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+If you have any questions or feedback, please don't hesitate to contact us at hangyeolkim522@gmail.com
