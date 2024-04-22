@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "./LanguageContext";
 
 function NavBar() {
-  const { setLanguage } = useLanguage();
+  const { translate, setLanguage } = useLanguage();
   const [expand, updateExpanded] = useState(false);
   const handleSelectLanguage = (lang) => {
     setLanguage(lang);
@@ -59,7 +59,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                Home
+                {translate("home.title")}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -68,7 +68,7 @@ function NavBar() {
                 to="/menu"
                 onClick={() => updateExpanded(false)}
               >
-                Menu
+                {translate("menu.title")}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -77,7 +77,7 @@ function NavBar() {
                 to="/location"
                 onClick={() => updateExpanded(false)}
               >
-                Location
+                {translate("location.title")}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -86,7 +86,7 @@ function NavBar() {
                 to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                Contact
+                {translate("contact.title")}
               </Nav.Link>
             </Nav.Item>
           </Nav>

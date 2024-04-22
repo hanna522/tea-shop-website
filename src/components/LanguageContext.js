@@ -24,7 +24,9 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("en");
 
   const translations = {
+    // English ver
     en: {
+      // Home section text
       home: {
         title: "home",
         btn_about: "About Us",
@@ -91,7 +93,9 @@ export const LanguageProvider = ({ children }) => {
         },
       },
 
+      // Menu section text
       menu: {
+        title: "menu",
         featured_menu: {
           item1: {
             id: 1,
@@ -176,6 +180,7 @@ export const LanguageProvider = ({ children }) => {
         },
       },
 
+      // Location section text
       location: {
         title: "Location",
         address: {
@@ -189,9 +194,16 @@ export const LanguageProvider = ({ children }) => {
         },
         btn_direction: "Get Direction",
       },
+
+      // Contact section text
+      contact: {
+        title: "Contact",
+      },
     },
 
+    // English ver
     zh: {
+      // Home section text
       home: {
         title: "首页",
         btn_about: "关于我们",
@@ -254,7 +266,9 @@ export const LanguageProvider = ({ children }) => {
         },
       },
 
+      // Menu section text
       menu: {
+        title: "菜单",
         featured_menu: {
           item1: {
             id: 1,
@@ -339,6 +353,7 @@ export const LanguageProvider = ({ children }) => {
         },
       },
 
+      // Location section text
       location: {
         title: "位置",
         address: {
@@ -352,6 +367,11 @@ export const LanguageProvider = ({ children }) => {
         },
         btn_direction: "获取路线",
       },
+
+      // Contact section text
+      contact: {
+        title: "接触",
+      },
     },
   };
 
@@ -361,7 +381,7 @@ export const LanguageProvider = ({ children }) => {
     for (let k of keys) {
       result = result[k] || {};
     }
-    return typeof result === 'string' ? result : Object.values(result);
+    return typeof result === "string" ? result : Object.values(result);
   };
 
   return (

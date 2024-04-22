@@ -33,7 +33,7 @@ export default function Location() {
   const API_KEY = "";
   const center = { lat: 37.335594177246094, lng: -121.88988494873047 };
   const zoom = 14;
-  
+
   const { translate, setLanguage } = useLanguage();
 
   return (
@@ -72,7 +72,7 @@ export default function Location() {
                 rel="direction"
                 className="location-button"
               >
-                {translate('location.btn_direction')}
+                {translate("location.btn_direction")}
               </a>
             </Col>
           </Row>

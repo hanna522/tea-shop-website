@@ -26,9 +26,9 @@ function Home() {
           </Row>
           <Row className="home-header">
             <Col md={12} className="home-welcome-link">
-              <Link to="/Home" className="btn btn-primary" label="About Us">
+              <a href="#about" className="btn btn-primary" label="About Us">
                 {translate("home.btn_about")}
-              </Link>
+              </a>
               <Link to="/Menu" className="btn btn-primary" label="Browse Menu">
                 {translate("home.btn_browse")}
               </Link>
@@ -38,7 +38,7 @@ function Home() {
       </Container>
 
       {/** home info section - about philosophy*/}
-      <Container fluid className="home-info-section">
+      <Container fluid className="home-info-section" id="about">
         <Container className="home-info-content">
           <Row className="home-header">
             <Col>
@@ -102,7 +102,7 @@ function Home() {
           <Row className="home-header">
             <Col>
               <Link to="/Location" className="btn btn-primary">
-                {translate('home.btn_find')}
+                {translate("home.btn_find")}
               </Link>
             </Col>
           </Row>

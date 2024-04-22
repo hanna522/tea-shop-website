@@ -47,7 +47,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="http://google.com"
+                href="http://u.wechat.com/kC8XV2uMMwBDxtmdxgl-sn4"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
