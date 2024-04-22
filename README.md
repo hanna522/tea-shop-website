@@ -6,6 +6,7 @@ Tea Shop Website is a web application developed to provide a website for a Tea S
 
 ## Preview
 The web interface is accessible online at [Tea Alley](http://localhost:3000)
+
 ![image](https://github.com/hanna522/tea-shop-website/assets/120094054/ef3e3bf5-fd88-47f6-b708-e4c9a4822519)
 
 ## Project Structure
