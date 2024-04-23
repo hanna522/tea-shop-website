@@ -83,10 +83,9 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/contact"
+                to="/leaves"
                 onClick={() => updateExpanded(false)}
-              >
-                {translate("contact.title")}
+              >{translate("leaves.title")}
               </Nav.Link>
             </Nav.Item>
           </Nav>
