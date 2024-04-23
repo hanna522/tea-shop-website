@@ -195,9 +195,18 @@ export const LanguageProvider = ({ children }) => {
         btn_direction: "Get Direction",
       },
 
-      // Contact section text
-      contact: {
-        title: "Contact",
+      // Leaves section text
+      leaves: {
+        title: "Leaves",
+        subtitle: "Our Leaves",
+        intro1: "At Tea Alley, we pride ourselves on the superior quality of our tea leaves, " +
+            "which sets us apart in the bustling world of milk tea. Our leaves are sourced directly from the esteemed " +
+            "high-altitude estates of Taiwan, where the unique climate and rich soil impart a distinctive flavor and " +
+            "aroma unmatched by ordinary leaves. ",
+        intro2: "Each batch is hand-selected and meticulously tested for quality, " +
+            "ensuring a consistently robust and nuanced flavor profile. By using only the finest, sustainably " +
+            "harvested leaves, we not only enrich your milk tea experience but also uphold our commitment to " +
+            "environmental stewardship. Taste the difference with Tea Alley—where every sip speaks of quality and care."
       },
     },
 
@@ -369,8 +378,11 @@ export const LanguageProvider = ({ children }) => {
       },
 
       // Contact section text
-      contact: {
-        title: "接触",
+      leaves: {
+        title: "茶叶",
+        subtitle: "我们的茶叶",
+        intro1: "在茶巷，我们以高品质的茶叶而自豪，这使我们在繁忙的奶茶世界中脱颖而出。我们的茶叶直接来源于台湾高海拔茶园，独特的气候和肥沃的土壤赋予了茶叶无与伦比的独特风味和香气。",
+        intro2: "每一批茶叶都经过精心挑选并严格品质测试，确保味道始终浓郁而有层次。通过使用只有最优质、可持续采收的茶叶，我们不仅丰富了您的奶茶体验，还坚持我们对环境保护的承诺。来茶巷尝一尝区别吧—每一口都诉说着品质和关怀。"
       },
     },
   };

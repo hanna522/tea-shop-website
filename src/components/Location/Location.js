@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Wrapper } from "@googlemaps/react-wrapper";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { useLanguage } from "../LanguageContext";
 
 const MyMapComponent = ({ center, zoom }) => {
