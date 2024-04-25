@@ -19,13 +19,13 @@ function Home() {
       <Container fluid className="home-welcome-section">
         <Container className="home-welcome-content">
           <Row className="home-header">
-            <Col md={12} className="home-welcome-title">
+            <Col className="home-welcome-title">
               <h1>{translate("home.welcome.title")}</h1>
               <p>{translate("home.welcome.content")}</p>
             </Col>
           </Row>
           <Row className="home-header">
-            <Col md={12} className="home-welcome-link">
+            <Col className="home-welcome-link">
               <a href="#about" className="btn btn-primary" label="About Us">
                 {translate("home.btn_about")}
               </a>
@@ -78,6 +78,9 @@ function Home() {
                   </li>
                 ))}
               </ul>
+              <Link to="/Leaves" className="btn btn-primary" label="More Info">
+                {translate("home.btn_more")}
+              </Link>
             </Col>
           </Row>
         </Container>
@@ -96,7 +99,7 @@ function Home() {
           </Row>
           <Row className="home-header">
             <Col>
-              <img src={storeImage} alt="Location" width="500px"></img>
+              <img src={storeImage} alt="Location"></img>
             </Col>
           </Row>
           <Row className="home-header">
