@@ -288,17 +288,37 @@ export const LanguageProvider = ({ children }) => {
       // Leaves section text
       leaves: {
         title: "Leaves",
-        subtitle: "Our Leaves",
-        intro1:
-          "At Tea Alley, we pride ourselves on the superior quality of our tea leaves, " +
-          "which sets us apart in the bustling world of milk tea. Our leaves are sourced directly from the esteemed " +
-          "high-altitude estates of Taiwan, where the unique climate and rich soil impart a distinctive flavor and " +
-          "aroma unmatched by ordinary leaves. ",
-        intro2:
-          "Each batch is hand-selected and meticulously tested for quality, " +
-          "ensuring a consistently robust and nuanced flavor profile. By using only the finest, sustainably " +
-          "harvested leaves, we not only enrich your milk tea experience but also uphold our commitment to " +
-          "environmental stewardship. Taste the difference with Tea Alley—where every sip speaks of quality and care.",
+        our_leaves: {
+          subtitle: "Our Leaves",
+          intro1:
+            "At Tea Alley, we pride ourselves on the superior quality of our tea leaves, " +
+            "which sets us apart in the bustling world of milk tea. Our leaves are sourced directly from the esteemed " +
+            "high-altitude estates of Taiwan, where the unique climate and rich soil impart a distinctive flavor and " +
+            "aroma unmatched by ordinary leaves. ",
+          intro2:
+            "Welcome to our cozy retreat where tradition meets taste—Tea Alley, At our heart lies a dedication to quality," +
+            "beginning with our choice of tea leaves that set our milk teas apart. We proudly feature Tieguanyin and Alishan" +
+            "tea leaves, renowned for their exceptional flavors and quality.",
+        },
+        tea1: {
+          subtitle: "Tieguanyin Tea",
+          intro1:
+            "Tieguanyin is a premium variety of Chinese oolong tea originating from the Fujian province. It is named after" +
+            "the Buddhist deity Guanyin, the Goddess of Mercy. This tea is known for its unique and intricate production " +
+            "process, which involves a precise series of steps including withering, rolling, oxidation, and firing. The result" +
+            "is a distinctive tea with a floral aroma and a complex flavor profile that can range from fresh and green to sweet" +
+            "and roasted, depending on the degree of fermentation. Tieguanyin is also highly appreciated for its reputed health" +
+            "benefits, including aiding digestion and providing antioxidants.",
+        },
+        tea2: {
+          subtitle: "Alishan Tea",
+          intro1:
+            "Alishan tea refers to a high-quality oolong tea grown in the Alishan mountain range of Taiwan. " +
+            "This tea is renowned for its smooth, floral flavor and creamy texture, which are the result of the unique" +
+            "climatic conditions and high altitudes at which it is cultivated. Alishan tea leaves are typically handpicked" +
+            "and carefully processed to enhance their delicate aroma and flavor profiles. This tea is highly valued by" +
+            "connoisseurs and is often enjoyed for its soothing effects and subtle sweetness.",
+        },
       },
     },
 

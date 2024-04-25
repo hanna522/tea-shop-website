@@ -605,6 +605,43 @@ button:focus {
   align-items: center;
  }
 }
+
+/* --------- */
+/* Leaves section */
+/* --------- */
+.leaves-info-section {
+  position: relative;
+  color: var(--fg-color-b);
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+  margin-top: 120px;
+  min-height: 80vh;
+}
+
+.leaves-info-section h1 {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .leaves-info-section {
+    margin-top: 150px;
+  }
+}
+
+.flex-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaves-info-content {
+  padding-bottom: 40px;
+  color: var(--fg-color-b);
+  text-align: left;
+}
+.leaves-info-content .home-header{
+  padding-bottom: 50px;
+}
 /* --------- */
 /* Footer */
 /* --------- */
