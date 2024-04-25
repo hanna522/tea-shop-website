@@ -1,13 +1,13 @@
 import React from "react";
-import {Container, Row, Col} from "react-bootstrap";
-import {useLanguage} from "../LanguageContext";
+import { Container, Row, Col } from "react-bootstrap";
+import { useLanguage } from "../LanguageContext";
 import leafPic1 from "../../Assets/leaf.jpeg";
 import leafPic2 from "../../Assets/tea2.png";
 import leafPic3 from "../../Assets/tea1.png";
 
 export default function Leaves() {
-	const { translate, setLanguage } = useLanguage();
-	return (
+  const { translate, setLanguage } = useLanguage();
+  return (
     <>
       <Container fluid className="leaves-info-section">
         <Container className="leaves-info-content">

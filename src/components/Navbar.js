@@ -85,7 +85,8 @@ function NavBar() {
                 as={Link}
                 to="/leaves"
                 onClick={() => updateExpanded(false)}
-              >{translate("leaves.title")}
+              >
+                {translate("leaves.title")}
               </Nav.Link>
             </Nav.Item>
           </Nav>

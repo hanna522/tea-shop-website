@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import menus from "../Menu/MenuList";
 import { useLanguage } from "../LanguageContext";
 
 const settings = {

@@ -13,11 +13,11 @@ const MyMapComponent = ({ center, zoom }) => {
       const newMap = new window.google.maps.Map(ref.current, {
         center,
         zoom: 14,
-        mapId: "TEA_ALLEY_MAP"
+        mapId: "TEA_ALLEY_MAP",
       });
       setMap(newMap);
 
-      // merker instance
+      // marker instance
       new window.google.maps.Marker({
         position: center,
         map: newMap,

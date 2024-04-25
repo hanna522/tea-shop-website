@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Noto+Sans+TC:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&family=Noto+Sans+TC:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --bg-color: #fffef5;
@@ -30,21 +30,21 @@ html {
   color: var(--fg-color-b);
 }
 
-html .navbar, 
-html .footer, 
-html .home-welcome-section, 
-html .home-info-section, 
-html .menu-info-section, 
+html .navbar,
+html .footer,
+html .home-welcome-section,
+html .home-info-section,
+html .menu-info-section,
 html .location-info-section {
-  font-family: "Lato", Arial, Helvetica, sans-serif
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
-html:lang(zh) .navbar, 
+html:lang(zh) .navbar,
 html:lang(zh) .home-welcome-section,
 html:lang(zh) .home-info-section,
-html:lang(zh) .menu-info-section, 
+html:lang(zh) .menu-info-section,
 html:lang(zh) .location-info-section {
-  font-family: "Noto Sans TC", "Lato", Arial, Helvetica, sans-serif
+  font-family: "Noto Sans TC", "Lato", Arial, Helvetica, sans-serif;
 }
 
 .green {
@@ -419,21 +419,21 @@ button:focus {
 }
 
 @media (max-width: 480px) {
-  .home-info-flex-list li{
+  .home-info-flex-list li {
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
-.home-info-flex-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  list-style: none;
-  padding: 30px 20px 0px 20px;
-}
+  .home-info-flex-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding: 30px 20px 0px 20px;
+  }
 }
 
 .home-info-flex-list img {
@@ -461,7 +461,7 @@ button:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center ;
+  text-align: center;
 }
 
 .slider-item img {
@@ -498,20 +498,20 @@ button:focus {
   }
 }
 
-.menu-info-section h1{
+.menu-info-section h1 {
   text-align: left;
 }
 
-.menu-info-section h2{
+.menu-info-section h2 {
   text-align: left;
   margin: 40px 20px 20px 0px;
 }
 
-.menu-info-section h3{
+.menu-info-section h3 {
   font-size: 24px;
 }
 
-.menu-info-section p{
+.menu-info-section p {
   font-size: 18px;
 }
 .menu-info-section img {
@@ -519,7 +519,7 @@ button:focus {
   height: auto;
 }
 
-.nutrition{
+.nutrition {
   color: gray;
   font-size: 16px !important;
 }
@@ -593,17 +593,17 @@ button:focus {
 }
 
 @media (max-width: 767px) {
- .flex-middle-mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
+  .flex-middle-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
- .flex-middle-mobile section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
+  .flex-middle-mobile section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* --------- */
@@ -639,7 +639,7 @@ button:focus {
   color: var(--fg-color-b);
   text-align: left;
 }
-.leaves-info-content .home-header{
+.leaves-info-content .home-header {
   padding-bottom: 50px;
 }
 /* --------- */
