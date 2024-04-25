@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Noto+Sans+TC:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --bg-color: #fffef5;
@@ -25,9 +26,25 @@
 }
 
 html {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
   background: var(--bg-color);
   color: var(--fg-color-b);
+}
+
+html .navbar, 
+html .footer, 
+html .home-welcome-section, 
+html .home-info-section, 
+html .menu-info-section, 
+html .location-info-section {
+  font-family: "Lato", Arial, Helvetica, sans-serif
+}
+
+html:lang(zh) .navbar, 
+html:lang(zh) .home-welcome-section,
+html:lang(zh) .home-info-section,
+html:lang(zh) .menu-info-section, 
+html:lang(zh) .location-info-section {
+  font-family: "Noto Sans TC", "Lato", Arial, Helvetica, sans-serif
 }
 
 .green {
@@ -80,7 +97,7 @@ button:focus {
 .navbar-toggler {
   position: relative;
   background-color: transparent;
-  border-color: transparent;
+  border-color: transparent !important;
 }
 
 .navbar-toggler span {
@@ -127,12 +144,6 @@ button:focus {
   opacity: 0.9;
 }
 
-.language {
-  font-size: 12px;
-  margin: 0px;
-  padding-top: 0px !important;
-}
-
 .vertical-nav {
   display: flex;
   flex-direction: column;
@@ -144,7 +155,13 @@ button:focus {
   display: none !important;
 }
 
-@media (max-width: 768px) {
+.language {
+  font-size: 12px;
+  margin: 0px;
+  padding-top: 0px !important;
+}
+
+@media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
@@ -178,7 +195,7 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
@@ -267,7 +284,7 @@ button:focus {
 
 .home-welcome-title h1 {
   font-size: 80px;
-  margin-bottom: -10px;
+  margin-bottom: 5px;
   font-weight: 800;
 }
 
@@ -284,7 +301,7 @@ button:focus {
   margin-top: 150px !important;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .home-welcome-title {
     margin-left: 10%;
   }
@@ -317,7 +334,7 @@ button:focus {
   padding: 30px 0px 0px 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .home-info-grid-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -332,13 +349,13 @@ button:focus {
   width: 400px;
 }
 
-@media (max-width: 1024) {
+@media (max-width: 1023px) {
   .home-info-grid-list li {
     width: 350px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .home-info-grid-list li {
     width: 400px;
   }
@@ -426,12 +443,19 @@ button:focus {
   padding-bottom: 30px !important;
   padding-top: 30px !important;
   margin-top: 120px;
+  min-height: 80vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .location-info-section {
     margin-top: 150px;
   }
+}
+
+.flex-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .location-info-content {
@@ -444,13 +468,24 @@ button:focus {
   padding-bottom: 30px;
 }
 
-.location-info-content section {
-  padding: 10px 0px 3px 0px;
+.location-info-content h2 {
+  padding: 10px 10px 0px 10px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.location-info-content h3 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .location-info-content p {
-  padding: 0;
   margin: 0;
+  font-size: 16px;
+}
+
+.location-info-content section {
+  padding: 10px 0px 3px 20px;
 }
 
 .location-button {
@@ -458,7 +493,7 @@ button:focus {
   background-color: var(--highlight-color-b);
   color: white;
   padding: 10px 20px;
-  margin: 20px 0px 0px 0px;
+  margin: 20px 0px 0px 20px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -467,6 +502,19 @@ button:focus {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+ .flex-middle-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .flex-middle-mobile section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+}
 /* --------- */
 /* Footer */
 /* --------- */

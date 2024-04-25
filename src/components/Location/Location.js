@@ -41,20 +41,20 @@ export default function Location() {
         <Container className="location-info-content">
           <Row className="home-header">
             <h1>{translate("location.title")}</h1>
-            <Col md={7}>
+            <Col className="flex-middle" md={7}>
               <Wrapper apiKey={API_KEY}>
                 <MyMapComponent center={center} zoom={zoom} />
               </Wrapper>
             </Col>
-            <Col md={5}>
+            <Col className="flex-middle-mobile" md={5}>
               <h2>Tea Alley - San Jose</h2>
               <section>
-                <h4>{translate("location.address.title")}</h4>
+                <h3>{translate("location.address.title")}</h3>
                 <p>40 S 1st st</p>
                 <p>San Jose, CA 95113</p>
               </section>
               <section>
-                <h4>{translate("location.open_hours.title")}</h4>
+                <h3>{translate("location.open_hours.title")}</h3>
                 <p>
                   <b>Tue-Sat</b> 8:00 PM - 2:00 AM
                 </p>
@@ -63,7 +63,7 @@ export default function Location() {
                 </p>
               </section>
               <section>
-                <h4>{translate("location.contact.title")}</h4>
+                <h3>{translate("location.contact.title")}</h3>
                 <p>(408) 217-9486</p>
               </section>
               <a

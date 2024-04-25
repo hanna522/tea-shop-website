@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 import freshImage from "../Assets/home-fresh.png";
 import healthyImage from "../Assets/home-healthy.png";
@@ -23,6 +23,11 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("en");
 
+  useEffect(() => {
+    // 언어가 바뀔 때마다 HTML의 lang 속성 업데이트
+    document.documentElement.lang = language;
+  }, [language]);
+  
   const translations = {
     // English ver
     en: {
@@ -210,7 +215,7 @@ export const LanguageProvider = ({ children }) => {
       },
     },
 
-    // English ver
+    // Chinese ver
     zh: {
       // Home section text
       home: {
