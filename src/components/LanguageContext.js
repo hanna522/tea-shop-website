@@ -17,6 +17,13 @@ import menu7 from "../Assets/menu/menu7.png";
 import menu8 from "../Assets/menu/menu8.png";
 import menu9 from "../Assets/menu/menu9.png";
 import menu10 from "../Assets/menu/menu10.png";
+import menu11 from "../Assets/menu/menu11.png";
+import menu12 from "../Assets/menu/menu12.png";
+import menu13 from "../Assets/menu/menu13.png";
+import menu14 from "../Assets/menu/menu14.png";
+import menu15 from "../Assets/menu/menu15.png";
+import menu16 from "../Assets/menu/menu16.png";
+import menu17 from "../Assets/menu/menu17.png";
 
 const LanguageContext = createContext();
 
@@ -27,7 +34,7 @@ export const LanguageProvider = ({ children }) => {
     // 언어가 바뀔 때마다 HTML의 lang 속성 업데이트
     document.documentElement.lang = language;
   }, [language]);
-  
+
   const translations = {
     // English ver
     en: {
@@ -104,84 +111,161 @@ export const LanguageProvider = ({ children }) => {
         title: "Menu",
         featured_menu: {
           item1: {
-            id: 1,
-            category: "featured menu",
             name: "Oat Milk Matcha Latte",
             image: menu1,
             description:
               "Matcha has a grassy taste, perhaps a nicer way to say that is earthy. It tastes much stronger than regular green tea and has a really unique flavor, so it’s a little hard to describe. If you haven’t tried it, I recommend you just give it a go and see if you like it!",
           },
           item2: {
-            id: 2,
-            category: "featured menu",
             name: "House Black Tea",
             image: menu2,
             description:
               "House Black is a Chinese black tea blend that can be enjoyed hot or iced. It's described as brisk and flavorful with a smooth finish",
           },
           item3: {
-            id: 1,
-            category: "featured menu",
             name: "Green Grape Green Tea",
             image: menu3,
             description:
-              'This elegantly flavored green tea fills the mouth with the sweet and savory aroma of the famous Japanese "Kyoho" grape. Its refreshing taste makes it ideal for iced teasn 3',
+              'This elegantly flavored green tea fills the mouth with the sweet and savory aroma of the famous Japanese "Kyoho" grape. Its refreshing taste makes it ideal for iced teas',
+            nutrition: "Lactose-free",
           },
           item4: {
-            id: 2,
-            category: "featured menu",
             name: "Okinawa Brown Sugar Black Tea",
             image: menu4,
             description:
               "Okinawa milk tea is a type of milk tea that draws influence from the Okinawa region of Japan. Often compared to Hokkaido milk tea, Okinawa milk tea is a tasty blend of black tea, milk, and sweetener",
           },
           item5: {
-            id: 1,
-            category: "featured menu",
             name: "Puff Cream Boba Choco Milk Tea",
             image: menu5,
             description:
               "Puff Cream Boba Choco Milk Tea is a decadent beverage combining creamy milk tea with chewy tapioca pearls, topped with a fluffy layer of whipped cream and drizzled with rich chocolate syrup, offering a delightful blend of textures and flavors in every sip.",
+            nutrition: "Caffeine-free",
           },
           item6: {
-            id: 1,
-            category: "featured menu",
-            name: "Oat Milk Matcha Latte",
+            name: "Lychee Lemon Tea",
             image: menu6,
+            description:
+              "Lychee lemon tea is a refreshing beverage that combines the sweet, floral notes of lychee with the tart, citrusy zest of lemon. This delightful tea can be served either hot or iced, making it a versatile choice for all seasons. ",
+            nutrition: "Caffeine-free, Lactose-free",
+          },
+        },
+        milk_tea: {
+          item1: {
+            name: "Oat Milk Matcha Latte",
+            image: menu1,
             description:
               "Matcha has a grassy taste, perhaps a nicer way to say that is earthy. It tastes much stronger than regular green tea and has a really unique flavor, so it’s a little hard to describe. If you haven’t tried it, I recommend you just give it a go and see if you like it!",
           },
-          item7: {
-            id: 2,
-            category: "featured menu",
+          item2: {
             name: "House Black Tea",
-            image: menu7,
+            image: menu2,
             description:
               "House Black is a Chinese black tea blend that can be enjoyed hot or iced. It's described as brisk and flavorful with a smooth finish",
           },
-          item8: {
-            id: 1,
-            category: "featured menu",
-            name: "Green Grape Green Tea",
-            image: menu8,
-            description:
-              'This elegantly flavored green tea fills the mouth with the sweet and savory aroma of the famous Japanese "Kyoho" grape. Its refreshing taste makes it ideal for iced teasn 3',
-          },
-          item9: {
-            id: 2,
-            category: "featured menu",
+          item3: {
             name: "Okinawa Brown Sugar Black Tea",
-            image: menu9,
+            image: menu4,
             description:
               "Okinawa milk tea is a type of milk tea that draws influence from the Okinawa region of Japan. Often compared to Hokkaido milk tea, Okinawa milk tea is a tasty blend of black tea, milk, and sweetener",
           },
-          item10: {
-            id: 1,
-            category: "featured menu",
+          item4: {
             name: "Puff Cream Boba Choco Milk Tea",
-            image: menu10,
+            image: menu5,
             description:
               "Puff Cream Boba Choco Milk Tea is a decadent beverage combining creamy milk tea with chewy tapioca pearls, topped with a fluffy layer of whipped cream and drizzled with rich chocolate syrup, offering a delightful blend of textures and flavors in every sip.",
+            nutrition: "Caffeine-free",
+          },
+          item5: {
+            name: "Marshmallow Milk Tea",
+            image: menu8,
+            description:
+              "Milk tea that is sweetened or topped with marshmallows, adding a creamy and fluffy texture to the beverage.",
+            nutrition: "Caffeine-free",
+          },
+          item6: {
+            name: "Oreo Milk Tea",
+            image: menu14,
+            description:
+              "A milk tea beverage that includes Oreo cookies, either blended into the tea or added as a topping, creating a unique and popular flavor combination.",
+            nutrition: "Caffeine-free",
+          },
+          item7: {
+            name: "Tieguanyin Latte",
+            image: menu10,
+            description:
+              "Latte made with Tieguanyin tea, a premium variety of Chinese oolong tea. The drink combines the floral and slightly sweet notes of Tieguanyin tea with the creamy texture of a latte.",
+          },
+          item8: {
+            name: "Chocolate Latte",
+            image: menu13,
+            description:
+              " A latte that incorporates chocolate, combining the creamy texture of a latte with the rich, sweet flavor of chocolate.",
+            nutrition: "Caffeine-free",
+          },
+        },
+        fruit_tea: {
+          item1: {
+            name: "Green Grape Green Tea",
+            image: menu3,
+            description:
+              'This elegantly flavored green tea fills the mouth with the sweet and savory aroma of the famous Japanese "Kyoho" grape. Its refreshing taste makes it ideal for iced teas',
+            nutrition: "Caffeine-free, Lactose-free",
+          },
+          item2: {
+            name: "Lychee Lemon Tea",
+            image: menu6,
+            description:
+              "Lychee lemon tea is a refreshing beverage that combines the sweet, floral notes of lychee with the tart, citrusy zest of lemon. This delightful tea can be served either hot or iced, making it a versatile choice for all seasons. ",
+            nutrition: "Caffeine-free, Lactose-free",
+          },
+          item3: {
+            name: "Peach Green Tea",
+            image: menu7,
+            description:
+              " Type of green tea that is flavored with peach, combining the grassy freshness of green tea with the sweet and aromatic notes of peach.",
+            nutrition: "Lactose-free",
+          },
+          item4: {
+            name: "Orange Green Tea",
+            image: menu9,
+            description:
+              " Type of green tea that is flavored with orange, offering a citrusy twist to the traditional green tea flavor.",
+            nutrition: "Caffeine-free, Lactose-free",
+          },
+          item5: {
+            name: "Lemon Black Tea",
+            image: menu11,
+            description:
+              "Type of black tea that is flavored with lemon, offering a refreshing citrus twist to the robust and rich flavor of black tea.",
+            nutrition: "Lactose-free",
+          },
+          item6: {
+            name: "Hibiscus Tea",
+            image: menu12,
+            description:
+              "A tea made from the dried petals of the hibiscus flower, known for its vibrant red color and tart, cranberry-like flavor.",
+            nutrition: "Caffeine-free, Lactose-free",
+          },
+        },
+        snack: {
+          item1: {
+            name: "Boba Pocket",
+            image: menu15,
+            description:
+              "This hand-held treat encases chewy tapioca pearls and your choice of premium tea blend in a soft, sweet dough. Perfect for on-the-go refreshment, each Boba Pocket offers a burst of flavor with every bite.",
+          },
+          item2: {
+            name: "Popcorn Chicken",
+            image: menu16,
+            description:
+              "Marinated in a blend of spices and fried to golden perfection, these tender morsels are served hot and ready to dip into your choice of classic or spicy sauces. ",
+          },
+          item3: {
+            name: "Garlic Waffle Fries",
+            image: menu17,
+            description:
+              "Thick-cut and seasoned with a robust garlic rub, these fries are crisped to perfection and served with a side of creamy aioli dip.",
           },
         },
       },
@@ -289,84 +373,159 @@ export const LanguageProvider = ({ children }) => {
         title: "菜单",
         featured_menu: {
           item1: {
-            id: 1,
-            category: "特色菜单",
             name: "燕麦奶抹茶拿铁",
             image: menu1,
             description:
-              "抹茶具有草木的味道，或许更好的说法是泥土的味道。它的味道比普通绿茶浓郁得多，有着非常独特的风味，所以很难描述。如果您还没有尝试过，我建议您试一试，看看您是否喜欢！",
+              "抹茶的味道带有草味，或许更好的说法是土味。它比普通绿茶味道浓郁得多，有一种非常独特的风味，所以有点难以描述。如果你还没有尝试过，我建议你尝一尝，看看你是否喜欢！",
           },
           item2: {
-            id: 2,
-            category: "特色菜单",
-            name: "自制红茶",
+            name: "招牌红茶",
             image: menu2,
             description:
-              "自制红茶是一种可以冷热饮用的中国红茶混合物。它被描述为爽口而味道浓郁，口感顺滑",
+              "招牌红茶是一种可冷可热享用的中国红茶混合饮品。其味道被描述为鲜明且富有风味，口感顺滑",
           },
           item3: {
-            id: 1,
-            category: "特色菜单",
             name: "绿葡萄绿茶",
             image: menu3,
             description:
-              "这种优雅的风味绿茶让口中充满了日本著名“巨峰”葡萄的甜美和香气。它的清爽口感使其成为冰茶的理想选择",
+              "这款优雅的绿茶充满了日本著名“巨峰”葡萄的甜美和咸香。其清新的口感非常适合制作冰茶",
+            nutrition: "不含乳糖",
           },
           item4: {
-            id: 2,
-            category: "特色菜单",
-            name: "冲绳黑糖红茶",
+            name: "冲绳黑糖黑茶",
             image: menu4,
             description:
-              "冲绳奶茶是一种受日本冲绳地区影响的奶茶。常与北海道奶茶相比较，冲绳奶茶是红茶、牛奶和甜味剂的美味混合物",
+              "冲绳奶茶是一种受冲绳地区影响的奶茶。经常与北海道奶茶相比，冲绳奶茶是黑茶、牛奶和甜味剂的美味混合",
           },
           item5: {
-            id: 1,
-            category: "特色菜单",
-            name: "泡泡奶茶巧克力牛奶茶",
+            name: "泡沫奶油波霸巧克力奶茶",
             image: menu5,
             description:
-              "泡泡奶茶巧克力牛奶茶是一种奢华的饮品，将奶茶与Q弹的珍珠，盖上蓬松的奶油，淋上浓浓的巧克力糖浆，每一口都带来了丰富的口感和味道。",
+              "泡沫奶油波霸巧克力奶茶是一种结合了奶油奶茶和Q弹珍珠，顶部覆盖一层蓬松的奶油并淋上丰富巧克力糖浆的奢华饮品，每一口都能享受到多重质地和风味的交融",
+            nutrition: "无咖啡因",
           },
           item6: {
-            id: 1,
-            category: "特色菜单",
-            name: "燕麦奶抹茶拿铁",
+            name: "荔枝柠檬茶",
             image: menu6,
             description:
-              "抹茶具有草木的味道，或许更好的说法是泥土的味道。它的味道比普通绿茶浓郁得多，有着非常独特的风味，所以很难描述。如果您还没有尝试过，我建议您试一试，看看您是否喜欢！",
+              "荔枝柠檬茶是一种清爽的饮品，结合了荔枝的甜美花香和柠檬的酸甜柑橘香气。这款美妙的茶可以热饮或冷饮，适合四季享用",
+            nutrition: "无咖啡因，不含乳糖",
+          },
+        },
+        milk_tea: {
+          item1: {
+            name: "燕麦奶抹茶拿铁",
+            image: menu1,
+            description:
+              "抹茶的味道带有草味，或许更好的说法是土味。它比普通绿茶味道浓郁得多，有一种非常独特的风味，所以有点难以描述。如果你还没有尝试过，我建议你尝一尝，看看你是否喜欢！",
+          },
+          item2: {
+            name: "招牌红茶",
+            image: menu2,
+            description:
+              "招牌红茶是一种可冷可热享用的中国红茶混合饮品。其味道被描述为鲜明且富有风味，口感顺滑",
+          },
+          item3: {
+            name: "冲绳黑糖黑茶",
+            image: menu4,
+            description:
+              "冲绳奶茶是一种受冲绳地区影响的奶茶。经常与北海道奶茶相比，冲绳奶茶是黑茶、牛奶和甜味剂的美味混合",
+          },
+          item4: {
+            name: "泡沫奶油波霸巧克力奶茶",
+            image: menu5,
+            description:
+              "泡沫奶油波霸巧克力奶茶是一种结合了奶油奶茶和Q弹珍珠，顶部覆盖一层蓬松的奶油并淋上丰富巧克力糖浆的奢华饮品，每一口都能享受到多重质地和风味的交融",
+            nutrition: "无咖啡因",
+          },
+          item5: {
+            name: "棉花糖奶茶",
+            image: menu8,
+            description: "奶茶中加入了棉花糖，增添了奶茶的奶香和泡沫的质感",
+            nutrition: "无咖啡因",
+          },
+          item6: {
+            name: "奥利奥奶茶",
+            image: menu14,
+            description:
+              "一种奶茶饮料，其中包含奥利奥饼干，不论是混合在茶中还是作为顶料添加，都创造了独特而受欢迎的口味组合",
+            nutrition: "无咖啡因",
           },
           item7: {
-            id: 2,
-            category: "特色菜单",
-            name: "自制红茶",
-            image: menu7,
-            description:
-              "自制红茶是一种可以冷热饮用的中国红茶混合物。它被描述为爽口而味道浓郁，口感顺滑",
-          },
-          item8: {
-            id: 1,
-            category: "特色菜单",
-            name: "绿葡萄绿茶",
-            image: menu8,
-            description:
-              "这种优雅的风味绿茶让口中充满了日本著名“巨峰”葡萄的甜美和香气。它的清爽口感使其成为冰茶的理想选择",
-          },
-          item9: {
-            id: 2,
-            category: "特色菜单",
-            name: "冲绳黑糖红茶",
-            image: menu9,
-            description:
-              "冲绳奶茶是一种受日本冲绳地区影响的奶茶。常与北海道奶茶相比较，冲绳奶茶是红茶、牛奶和甜味剂的美味混合物",
-          },
-          item10: {
-            id: 1,
-            category: "特色菜单",
-            name: "泡泡奶茶巧克力牛奶茶",
+            name: "铁观音拿铁",
             image: menu10,
             description:
-              "泡泡奶茶巧克力牛奶茶是一种奢华的饮品，将奶茶与Q弹的珍珠，盖上蓬松的奶油，淋上浓浓的巧克力糖浆，每一口都带来了丰富的口感和味道。",
+              "以中国优质乌龙茶铁观音为基底的拿铁，饮品结合了铁观音的花香和微甜味道与拿铁的奶香质感",
+          },
+          item8: {
+            name: "巧克力拿铁",
+            image: menu13,
+            description:
+              "一种拿铁饮品，加入了巧克力，结合了拿铁的奶香质感与巧克力的丰富甜味",
+            nutrition: "无咖啡因",
+          },
+        },
+        fruit_tea: {
+          item1: {
+            name: "绿葡萄绿茶",
+            image: menu3,
+            description:
+              "这款优雅的绿茶充满了日本著名“巨峰”葡萄的甜美和咸香。其清新的口感非常适合制作冰茶",
+            nutrition: "无咖啡因，不含乳糖",
+          },
+          item2: {
+            name: "荔枝柠檬茶",
+            image: menu6,
+            description:
+              "荔枝柠檬茶是一种清爽的饮品，结合了荔枝的甜美花香和柠檬的酸甜柑橘香气。这款美妙的茶可以热饮或冷饮，适合四季享用",
+            nutrition: "无咖啡因，不含乳糖",
+          },
+          item3: {
+            name: "桃子绿茶",
+            image: menu7,
+            description:
+              "一种加入了桃子香味的绿茶，结合了绿茶的清新草味和桃子的甜美香气",
+            nutrition: "不含乳糖",
+          },
+          item4: {
+            name: "橙子绿茶",
+            image: menu9,
+            description: "一种加入了橙子香味的绿茶，提供了一种柑橘香的新颖变化",
+            nutrition: "无咖啡因，不含乳糖",
+          },
+          item5: {
+            name: "柠檬黑茶",
+            image: menu11,
+            description:
+              "一种加入了柠檬香味的黑茶，提供了一种清新的柑橘香新颖变化",
+            nutrition: "不含乳糖",
+          },
+          item6: {
+            name: "洛神花茶",
+            image: menu12,
+            description:
+              "一种由洛神花干瓣制作的茶，以其鲜艳的红色和类似蔓越莓的酸味而闻名",
+            nutrition: "无咖啡因，不含乳糖",
+          },
+        },
+        snack: {
+          item1: {
+            name: "波霸口袋",
+            image: menu15,
+            description:
+              "这款手持小吃将Q弹珍珠和您选择的优质茶混合包裹在柔软的甜面团中。每个波霸口袋都为您在路上提供一阵阵的味觉享受",
+          },
+          item2: {
+            name: "盐酥鸡",
+            image: menu16,
+            description:
+              "用一系列香料腌制后炸至金黄酥脆，这些嫩肉块现炸现卖，可搭配经典或辣味酱料",
+          },
+          item3: {
+            name: "蒜香华夫薯条",
+            image: menu17,
+            description:
+              "这些厚切薯条用浓郁的蒜香调味，炸至酥脆，配上一份奶油蒜酱蘸料",
           },
         },
       },

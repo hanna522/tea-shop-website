@@ -12,7 +12,8 @@ const MyMapComponent = ({ center, zoom }) => {
       // map instance
       const newMap = new window.google.maps.Map(ref.current, {
         center,
-        zoom,
+        zoom: 14,
+        mapId: "TEA_ALLEY_MAP"
       });
       setMap(newMap);
 
@@ -29,9 +30,7 @@ const MyMapComponent = ({ center, zoom }) => {
 };
 
 export default function Location() {
-  const API_KEY = "";
   const center = { lat: 37.335594177246094, lng: -121.88988494873047 };
-  const zoom = 14;
 
   const { translate, setLanguage } = useLanguage();
 
@@ -42,8 +41,8 @@ export default function Location() {
           <Row className="home-header">
             <h1>{translate("location.title")}</h1>
             <Col className="flex-middle" md={7}>
-              <Wrapper apiKey={API_KEY}>
-                <MyMapComponent center={center} zoom={zoom} />
+              <Wrapper apiKey={process.env.REACT_APP_API_KEY}>
+                <MyMapComponent center={center} />
               </Wrapper>
             </Col>
             <Col className="flex-middle-mobile" md={5}>

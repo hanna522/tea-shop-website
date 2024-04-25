@@ -492,6 +492,38 @@ button:focus {
   margin-top: 120px;
 }
 
+@media (max-width: 767px) {
+  .menu-info-section {
+    margin-top: 150px;
+  }
+}
+
+.menu-info-section h1{
+  text-align: left;
+}
+
+.menu-info-section h2{
+  text-align: left;
+  margin: 40px 20px 20px 0px;
+}
+
+.menu-info-section h3{
+  font-size: 24px;
+}
+
+.menu-info-section p{
+  font-size: 18px;
+}
+.menu-info-section img {
+  max-width: 200px;
+  height: auto;
+}
+
+.nutrition{
+  color: gray;
+  font-size: 16px !important;
+}
+
 /* --------- */
 /* Location section */
 /* --------- */
