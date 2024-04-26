@@ -42,7 +42,7 @@ function Home() {
         <Container className="home-info-content">
           <Row className="home-header">
             <Col>
-              <h1>Our philosophy</h1>
+              <h1>{translate("home.info_phil.title")}</h1>
               <ul className="home-info-grid-list">
                 {philosophyData.map((item, index) => (
                   <li key={index}>

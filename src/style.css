@@ -304,6 +304,9 @@ button:focus {
   .home-welcome-title h1 {
     font-size: 58px;
   }
+  .home-welcome-title {
+    margin-left: 5% !important;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
