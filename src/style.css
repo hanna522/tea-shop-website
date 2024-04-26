@@ -23,6 +23,12 @@
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.2)
   );
+
+  --image-gradient2: linear-gradient(
+    to left to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0),
+  );
 }
 
 html {
@@ -156,8 +162,7 @@ button:focus {
 }
 
 .language {
-  font-size: 12px;
-  margin: 0px;
+  font-size: 14px;
   padding-top: 0px !important;
 }
 
@@ -295,7 +300,13 @@ button:focus {
   font-weight: 800;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
+  .home-welcome-title h1 {
+    font-size: 58px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
   .home-welcome-title h1 {
     font-size: 70px;
   }
@@ -312,15 +323,6 @@ button:focus {
   justify-content: center;
   gap: 1em;
   margin-top: 150px !important;
-}
-
-@media (max-width: 480px) {
-  .home-welcome-link {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 90px !important;
-  }
 }
 
 @media (max-width: 1023px) {
@@ -344,6 +346,10 @@ button:focus {
   padding-bottom: 40px;
   color: var(--fg-color-b);
   text-align: center;
+}
+
+.home-info-content h1{
+  font-weight: 700;
 }
 
 .home-info-grid-list {
@@ -500,15 +506,18 @@ button:focus {
 
 .menu-info-section h1 {
   text-align: left;
+  font-weight: 700;
 }
 
 .menu-info-section h2 {
   text-align: left;
+  font-weight: 700;
   margin: 40px 20px 20px 0px;
 }
 
 .menu-info-section h3 {
   font-size: 24px;
+  font-weight: 700;
 }
 
 .menu-info-section p {
@@ -556,6 +565,7 @@ button:focus {
 
 .location-info-content h1 {
   padding-bottom: 30px;
+  font-weight: 700;
 }
 
 .location-info-content h2 {
@@ -571,7 +581,7 @@ button:focus {
 
 .location-info-content p {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .location-info-content section {
@@ -620,6 +630,15 @@ button:focus {
 
 .leaves-info-section h1 {
   padding-bottom: 50px;
+  font-weight: 700;
+}
+
+.leaves-info-section h2 {
+  font-weight: 500;
+}
+
+.leaves-info-section p {
+  font-size: 18px;
 }
 
 @media (max-width: 767px) {
@@ -642,6 +661,7 @@ button:focus {
 .leaves-info-content .home-header {
   padding-bottom: 50px;
 }
+
 /* --------- */
 /* Footer */
 /* --------- */

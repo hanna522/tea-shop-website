@@ -109,6 +109,10 @@ export const LanguageProvider = ({ children }) => {
       // Menu section text
       menu: {
         title: "Menu",
+        subtitle1: "Featured Menu",
+        subtitle2: "Milk Tea",
+        subtitle3: "Fruit Tea",
+        subtitle4: "Snack",
         featured_menu: {
           item1: {
             name: "Oat Milk Matcha Latte",
@@ -391,6 +395,10 @@ export const LanguageProvider = ({ children }) => {
       // Menu section text
       menu: {
         title: "菜单",
+        subtitle1: "特色菜单",
+        subtitle2: "奶茶",
+        subtitle3: "水果茶",
+        subtitle4: "小吃",
         featured_menu: {
           item1: {
             name: "燕麦奶抹茶拿铁",

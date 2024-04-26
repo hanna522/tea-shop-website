@@ -37,7 +37,7 @@ export default function Leaves() {
               <img
                 src={leafPic2}
                 alt="home pic"
-                className="img-fluid"
+                className="img-fluid shown-mobile"
                 style={{ maxHeight: "450px" }}
               />
             </Col>

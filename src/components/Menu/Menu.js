@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import MenuList from "./MenuList.js";
 import { useLanguage } from "../LanguageContext";
 
 function Menu() {
@@ -20,7 +19,7 @@ function Menu() {
           <h1>{translate("menu.title")}</h1>
 
           {/** Featured Menu */}
-          <h2>Featured Menu</h2>
+          <h2>{translate("menu.subtitle1")}</h2>
           {featuredMenu.map((menuItem, index) => {
             return (
               <Row key={menuItem.id || menuItem.name || index}>
@@ -49,7 +48,7 @@ function Menu() {
           })}
 
           {/** Milk Tea */}
-          <h2>Milk Tea</h2>
+          <h2>{translate("menu.subtitle2")}</h2>
           {milkTea.map((menuItem, index) => {
             return (
               <Row key={menuItem.id || menuItem.name || index}>
@@ -78,7 +77,7 @@ function Menu() {
           })}
 
           {/** Fruit Tea */}
-          <h2>Fruit Tea</h2>
+          <h2>{translate("menu.subtitle3")}</h2>
           {fruitTea.map((menuItem, index) => {
             return (
               <Row key={menuItem.id || menuItem.name || index}>
@@ -107,7 +106,7 @@ function Menu() {
           })}
 
           {/** Snack */}
-          <h2>Snack</h2>
+          <h2>{translate("menu.subtitle4")}</h2>
           {snack.map((menuItem, index) => {
             return (
               <Row key={menuItem.id || menuItem.name || index}>
