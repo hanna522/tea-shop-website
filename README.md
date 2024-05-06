@@ -5,7 +5,7 @@ This repository contains the frontend code for the tea shop website project. It 
 Tea Shop Website is a web application developed to provide a website for a Tea Shop in San Jose. Utilizing ReactJS for the frontend, this project offers a user-friendly interface getting information about bubble tea for browsing menu to new customers.
 
 ## Preview
-The web interface is accessible online at [Tea Alley](http://localhost:3000)
+The web interface is accessible online at [Tea Alley](https://teaalleysj.netlify.app)
 
 ![image](https://github.com/hanna522/tea-shop-website/assets/120094054/ef3e3bf5-fd88-47f6-b708-e4c9a4822519)
 
